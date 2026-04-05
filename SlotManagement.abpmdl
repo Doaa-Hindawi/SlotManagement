@@ -1,0 +1,109 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "5.2.0",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.Account": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.Identity": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "10.1.1",
+      "isInstalled": true,
+      "creationTime": "04/05/2026 12:25:06 +00:00"
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "SlotManagement.Application": {
+      "path": "src/SlotManagement.Application/SlotManagement.Application.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.Application.Tests": {
+      "path": "test/SlotManagement.Application.Tests/SlotManagement.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "SlotManagement.Domain.Shared": {
+      "path": "src/SlotManagement.Domain.Shared/SlotManagement.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.Application.Contracts": {
+      "path": "src/SlotManagement.Application.Contracts/SlotManagement.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.HttpApi": {
+      "path": "src/SlotManagement.HttpApi/SlotManagement.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.HttpApi.Client": {
+      "path": "src/SlotManagement.HttpApi.Client/SlotManagement.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.EntityFrameworkCore.Tests": {
+      "path": "test/SlotManagement.EntityFrameworkCore.Tests/SlotManagement.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "SlotManagement.EntityFrameworkCore": {
+      "path": "src/SlotManagement.EntityFrameworkCore/SlotManagement.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.TestBase": {
+      "path": "test/SlotManagement.TestBase/SlotManagement.TestBase.abppkg",
+      "folder": "test"
+    },
+    "SlotManagement.Domain.Tests": {
+      "path": "test/SlotManagement.Domain.Tests/SlotManagement.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "SlotManagement.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/SlotManagement.HttpApi.Client.ConsoleTestApp/SlotManagement.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "SlotManagement.DbMigrator": {
+      "path": "src/SlotManagement.DbMigrator/SlotManagement.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.HttpApi.Host": {
+      "path": "src/SlotManagement.HttpApi.Host/SlotManagement.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "SlotManagement.Domain": {
+      "path": "src/SlotManagement.Domain/SlotManagement.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

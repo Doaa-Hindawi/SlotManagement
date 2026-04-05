@@ -1,0 +1,23 @@
+<Solution>
+    <Configurations>
+        <Platform Name="Any CPU" />
+    </Configurations>
+    <Folder Name="/src/">
+        <Project Path="src/SlotManagement.Domain/SlotManagement.Domain.csproj" />
+        <Project Path="src/SlotManagement.Application/SlotManagement.Application.csproj" />
+        <Project Path="src/SlotManagement.EntityFrameworkCore/SlotManagement.EntityFrameworkCore.csproj" />
+        <Project Path="src/SlotManagement.Domain.Shared/SlotManagement.Domain.Shared.csproj" />
+        <Project Path="src/SlotManagement.Application.Contracts/SlotManagement.Application.Contracts.csproj" />
+        <Project Path="src/SlotManagement.HttpApi/SlotManagement.HttpApi.csproj" />
+        <Project Path="src/SlotManagement.HttpApi.Client/SlotManagement.HttpApi.Client.csproj" />
+        <Project Path="src/SlotManagement.DbMigrator/SlotManagement.DbMigrator.csproj" />
+        <Project Path="src/SlotManagement.HttpApi.Host/SlotManagement.HttpApi.Host.csproj" />
+    </Folder>
+    <Folder Name="/test/">
+        <Project Path="test/SlotManagement.Application.Tests/SlotManagement.Application.Tests.csproj" />
+        <Project Path="test/SlotManagement.EntityFrameworkCore.Tests/SlotManagement.EntityFrameworkCore.Tests.csproj" />
+        <Project Path="test/SlotManagement.TestBase/SlotManagement.TestBase.csproj" />
+        <Project Path="test/SlotManagement.Domain.Tests/SlotManagement.Domain.Tests.csproj" />
+        <Project Path="test/SlotManagement.HttpApi.Client.ConsoleTestApp/SlotManagement.HttpApi.Client.ConsoleTestApp.csproj" />
+    </Folder>
+</Solution>
