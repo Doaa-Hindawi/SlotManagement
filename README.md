@@ -1,5 +1,19 @@
 # SlotManagement
-
+-------------------------------------
+## 🚀 Getting Started
+1. **Database**: Update the connection string in `appsettings.json`.
+2. **Migrations**: Run `dotnet ef database update` or run the `DbMigrator` project.
+3. **Backend**: Run `SlotManagement.HttpApi.Host`.
+4. **Frontend**: Navigate to the Angular folder, run `npm install`, then `npm start`.
+## 🌍 TimeZone Handling (NodaTime)
+To ensure absolute accuracy across different time zones, I integrated **NodaTime**. 
+- **Reason**: Standard `DateTime` is ambiguous. NodaTime allows us to handle 'Instant' and 'ZonedDateTime' correctly.
+- **Implementation**: The system stores all slots in UTC and converts them based on the user's specific IANA TimeZone ID.
+## 📝 Assumptions & Decisions
+- **Slot Duration**: Fixed at 30 minutes (configurable in future phases).
+- **Concurrent Bookings**: Prevented via optimistic concurrency at the DB level.
+- **ABP Framework**: Used to leverage its robust Identity and Audit logging features
+- - - - - - - - - - - - 
 ## About this solution
 
 This is a layered startup solution based on [Domain Driven Design (DDD)](https://abp.io/docs/latest/framework/architecture/domain-driven-design) practises. All the fundamental ABP modules are already installed. Check the [Application Startup Template](https://abp.io/docs/latest/solution-templates/layered-web-application) documentation for more info.
@@ -75,17 +89,4 @@ You can see the following resources to learn more about your solution and the AB
 
 * [Web Application Development Tutorial](https://abp.io/docs/latest/tutorials/book-store/part-1)
 * [Application Startup Template](https://abp.io/docs/latest/startup-templates/application/index)
--------------------------------------
-## 🚀 Getting Started
-1. **Database**: Update the connection string in `appsettings.json`.
-2. **Migrations**: Run `dotnet ef database update` or run the `DbMigrator` project.
-3. **Backend**: Run `SlotManagement.HttpApi.Host`.
-4. **Frontend**: Navigate to the Angular folder, run `npm install`, then `npm start`.
-## 🌍 TimeZone Handling (NodaTime)
-To ensure absolute accuracy across different time zones, I integrated **NodaTime**. 
-- **Reason**: Standard `DateTime` is ambiguous. NodaTime allows us to handle 'Instant' and 'ZonedDateTime' correctly.
-- **Implementation**: The system stores all slots in UTC and converts them based on the user's specific IANA TimeZone ID.
-## 📝 Assumptions & Decisions
-- **Slot Duration**: Fixed at 30 minutes (configurable in future phases).
-- **Concurrent Bookings**: Prevented via optimistic concurrency at the DB level.
-- **ABP Framework**: Used to leverage its robust Identity and Audit logging features.
+.
